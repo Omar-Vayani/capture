@@ -21,7 +21,7 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<AboutUs />} exact />
+          <Route path="/capture" element={<AboutUs />} exact />
           <Route path="/work" element={<OurWork path="/work" />} exact />
           <Route path="/work/:id" element={<MovieDetail />} />
           <Route path="/contact" element={<ContactUs />} />
